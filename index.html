@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GameTool — Access Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="bg"></div>
+  <main class="container">
+    <section class="card">
+      <div class="badge">⚡ GAMING TOOL</div>
+      <h1>ACCESS DASHBOARD</h1>
+      <p class="subtitle">A simple, mobile-friendly utility for your own authorized data.</p>
+
+      <label for="input">Enter your authorized URL</label>
+      <div class="input-row">
+        <input id="input" type="url" placeholder="https://example.com/your-page">
+        <button id="processBtn">PROCESS</button>
+      </div>
+
+      <div id="status" class="status hidden"></div>
+
+      <div class="result">
+        <div class="result-head">
+          <span>RESULT</span>
+          <button id="copyBtn" class="copy" disabled>Copy</button>
+        </div>
+        <pre id="output">No result yet.</pre>
+      </div>
+
+      <div class="notice">
+        <strong>Privacy notice</strong>
+        <p>This demo does not collect passwords, cookies, session IDs, access tokens, or other authentication credentials. Use it only with data you own or are authorized to process.</p>
+      </div>
+    </section>
+
+    <footer>© 2026 GameTool · Built for authorized use</footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
